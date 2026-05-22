@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header: large clipboard + bold title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="📋"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class Check-In"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#1C1C1E"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:id="@+id/tvCheckinSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Robotics · This week"
+                    android:textSize="12sp"
+                    android:textColor="#8E8E93"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Rows are indented to align with the header text (not the icon) -->
+
+        <!-- Row 1: Showing Up -->
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#F0F0F0" android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:paddingTop="10dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="8dp">
+
+            <!-- Small icon + badge -->
+            <LinearLayout
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvCheckinIcon"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:text="📅"
+                    android:textSize="22sp"
+                    android:background="@drawable/bg_checkin_icon_box"/>
+
+                <TextView
+                    android:id="@+id/tvCheckinBadge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Great"
+                    android:textSize="10sp"
+                    android:textColor="#2E7D52"
+                    android:background="@drawable/bg_checkin_badge_green"
+                    android:paddingHorizontal="4dp"
+                    android:paddingVertical="2dp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <!-- Title + desc (smaller than header) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/tvCheckinTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Showing Up"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#1C1C1E"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:id="@+id/tvCheckinDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No sessions logged yet."
+                    android:textSize="12sp"
+                    android:textColor="#8E8E93"
+                    android:lineSpacingMultiplier="1.3"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Row 2: Joining In -->
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#F0F0F0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:paddingTop="10dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="8dp">
+
+            <LinearLayout
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvCheckinIcon2"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:text="✋"
+                    android:textSize="22sp"
+                    android:background="@drawable/bg_checkin_icon_box"/>
+
+                <TextView
+                    android:id="@+id/tvCheckinBadge2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Try more"
+                    android:textSize="10sp"
+                    android:textColor="#B45309"
+                    android:background="@drawable/bg_checkin_badge_yellow"
+                    android:paddingHorizontal="4dp"
+                    android:paddingVertical="2dp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/tvCheckinTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Joining in"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#1C1C1E"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:id="@+id/tvCheckinDesc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A bit quiet this week. Raise your hand more!"
+                    android:textSize="12sp"
+                    android:textColor="#8E8E93"
+                    android:lineSpacingMultiplier="1.3"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Row 3: Staying Consistent -->
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#F0F0F0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:paddingTop="10dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="8dp">
+
+            <LinearLayout
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvCheckinIcon3"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:text="🔁"
+                    android:textSize="22sp"
+                    android:background="@drawable/bg_checkin_icon_box"/>
+
+                <TextView
+                    android:id="@+id/tvCheckinBadge3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="On track"
+                    android:textSize="10sp"
+                    android:textColor="#1A6B3A"
+                    android:background="@drawable/bg_checkin_badge_green"
+                    android:paddingHorizontal="4dp"
+                    android:paddingVertical="2dp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/tvCheckinTitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Staying consistent"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#1C1C1E"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:id="@+id/tvCheckinDesc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No back-to-back absences. Keep it up! ✅"
+                    android:textSize="12sp"
+                    android:textColor="#8E8E93"
+                    android:lineSpacingMultiplier="1.3"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Row 4: Feeling Okay -->
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#F0F0F0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:paddingTop="10dp"
+            android:paddingBottom="2dp"
+            android:paddingStart="8dp">
+
+            <LinearLayout
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvCheckinIcon4"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:text="😊"
+                    android:textSize="22sp"
+                    android:background="@drawable/bg_checkin_icon_box"/>
+
+                <TextView
+                    android:id="@+id/tvCheckinBadge4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Check in"
+                    android:textSize="10sp"
+                    android:textColor="#B03030"
+                    android:background="@drawable/bg_checkin_badge_pink"
+                    android:paddingHorizontal="4dp"
+                    android:paddingVertical="2dp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/tvCheckinTitle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feeling okay?"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#1C1C1E"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:id="@+id/tvCheckinDesc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stressed 3 times this week. Rest up! 🏖"
+                    android:textSize="12sp"
+                    android:textColor="#8E8E93"
+                    android:lineSpacingMultiplier="1.3"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

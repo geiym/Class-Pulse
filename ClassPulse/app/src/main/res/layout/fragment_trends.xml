@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="36dp"
+            android:paddingBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Title -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your "
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:textColor="#1C1C1E"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Analysis"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:textColor="#E07060"/>
+                </LinearLayout>
+
+                <!-- Back button -->
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_chevron_right"
+                    android:background="@drawable/bg_back_btn_circle"
+                    android:contentDescription="Go back"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <include layout="@layout/view_color_strip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="4dp">
+
+            <!-- ① ENGAGEMENT HEATMAP -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp" app:cardElevation="0dp" app:cardBackgroundColor="#FCE8E8">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Engagement Heatmap" android:textSize="15sp" android:textStyle="bold" android:textColor="#1C1C1E"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="When are you most engaged?" android:textSize="12sp" android:textColor="#E07060"
+                        android:layout_marginBottom="10dp"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        app:cardCornerRadius="12dp" app:cardElevation="0dp" app:cardBackgroundColor="#FFFFFF">
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="vertical" android:padding="12dp">
+
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="8dp">
+                                <TextView android:id="@+id/tv_trend_month"
+                                    android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                                    android:text="April 2026" android:textSize="14sp" android:textStyle="bold" android:textColor="#1C1C1E"/>
+                                <ImageButton android:id="@+id/btn_heatmap_prev"
+                                    android:layout_width="30dp" android:layout_height="30dp"
+                                    android:src="@drawable/ic_chevron_left"
+                                    android:background="?attr/selectableItemBackgroundBorderless"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="Apr" android:textSize="12sp" android:textColor="#8E8E93"
+                                    android:layout_marginHorizontal="4dp"/>
+                                <ImageButton android:id="@+id/btn_heatmap_next"
+                                    android:layout_width="30dp" android:layout_height="30dp"
+                                    android:src="@drawable/ic_chevron_right"
+                                    android:background="?attr/selectableItemBackgroundBorderless"/>
+                            </LinearLayout>
+
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                android:orientation="horizontal" android:layout_marginBottom="4dp">
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="S" android:textSize="11sp" android:textColor="#8E8E93"/>
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="M" android:textSize="11sp" android:textColor="#8E8E93"/>
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="T" android:textSize="11sp" android:textColor="#8E8E93"/>
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="W" android:textSize="11sp" android:textColor="#8E8E93"/>
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="TH" android:textSize="11sp" android:textColor="#8E8E93"/>
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="F" android:textSize="11sp" android:textColor="#8E8E93"/>
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="S" android:textSize="11sp" android:textColor="#8E8E93"/>
+                            </LinearLayout>
+
+                            <android.widget.GridLayout
+                                android:id="@+id/heatmap_grid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:columnCount="7"/>
+
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="10dp">
+                                <View android:layout_width="22dp" android:layout_height="16dp" android:background="@drawable/legend_present" android:layout_marginEnd="4dp"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="High" android:textSize="11sp" android:textColor="#555" android:layout_marginEnd="10dp"/>
+                                <View android:layout_width="22dp" android:layout_height="16dp" android:background="@drawable/legend_late" android:layout_marginEnd="4dp"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Medium" android:textSize="11sp" android:textColor="#555" android:layout_marginEnd="10dp"/>
+                                <View android:layout_width="22dp" android:layout_height="16dp" android:background="@drawable/legend_absent" android:layout_marginEnd="4dp"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Low" android:textSize="11sp" android:textColor="#555" android:layout_marginEnd="10dp"/>
+                                <View android:layout_width="22dp" android:layout_height="16dp" android:background="@drawable/bg_heatmap_none" android:layout_marginEnd="4dp"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No class" android:textSize="11sp" android:textColor="#555"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ② MOOD x PARTICIPATION -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp" app:cardElevation="0dp" app:cardBackgroundColor="#FFF9E6">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Mood x Participation" android:textSize="15sp" android:textStyle="bold" android:textColor="#1C1C1E"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="How your mood affects performance across all subjects"
+                        android:textSize="12sp" android:textColor="#C0A030" android:layout_marginBottom="12dp"/>
+                    <LinearLayout android:id="@+id/ll_mood_participation"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ③ SUBJECT ENGAGEMENT RANKING -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp" app:cardElevation="0dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Subject Engagement Ranking" android:textSize="15sp" android:textStyle="bold" android:textColor="#1C1C1E"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Where you're most &amp; least engaged overall"
+                        android:textSize="12sp" android:textColor="#8E8E93" android:layout_marginBottom="12dp"/>
+                    <LinearLayout android:id="@+id/ll_subject_ranking"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ④ TRAJECTORY -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp" app:cardElevation="0dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Trajectory · Last 4 Weeks" android:textSize="15sp" android:textStyle="bold"
+                        android:textColor="#1C1C1E" android:layout_marginBottom="12dp"/>
+                    <LinearLayout android:id="@+id/ll_trajectory_bars"
+                        android:layout_width="match_parent" android:layout_height="90dp"
+                        android:orientation="horizontal" android:gravity="bottom"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:background="@drawable/bg_note_box"
+                        android:padding="12dp" android:layout_marginTop="12dp">
+                        <TextView android:id="@+id/tv_trajectory_text"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:text="Your engagement has been climbing steadily over 4 weeks."
+                            android:textSize="13sp" android:textColor="#1C1C1E" android:lineSpacingMultiplier="1.4"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ⑤ SLUMP DETECTOR -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp" app:cardElevation="0dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Slump Detector" android:textSize="15sp" android:textStyle="bold"
+                        android:textColor="#1C1C1E" android:layout_marginBottom="10dp"/>
+                    <TextView android:id="@+id/tv_slump_title"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="No slump detected" android:textSize="14sp" android:textStyle="bold"
+                        android:textColor="#2E7D52" android:layout_marginBottom="4dp"/>
+                    <TextView android:id="@+id/tv_slump_body"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="You haven't had 3 consecutive low-engagement days. Keep the momentum going!"
+                        android:textSize="13sp" android:textColor="#555555" android:lineSpacingMultiplier="1.4"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ⑥ LOGGING STREAK -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp" app:cardElevation="0dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Logging Streak" android:textSize="15sp" android:textStyle="bold" android:textColor="#1C1C1E"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Have you been logging consistently? (last 14 days)"
+                        android:textSize="12sp" android:textColor="#8E8E93" android:layout_marginBottom="14dp"/>
+                    <LinearLayout android:id="@+id/ll_streak_dots"
+                        android:layout_width="match_parent" android:layout_height="72dp"
+                        android:orientation="horizontal" android:gravity="center_vertical"
+                        android:layout_marginBottom="14dp"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginTop="4dp">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+                            android:padding="12dp" android:layout_marginEnd="6dp" android:background="@drawable/bg_stat_card">
+                            <TextView android:id="@+id/tv_current_streak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="24sp" android:textStyle="bold" android:textColor="#3DBFA0"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Current" android:textSize="11sp" android:textColor="#8E8E93"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Streak" android:textSize="11sp" android:textColor="#8E8E93"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+                            android:padding="12dp" android:layout_marginEnd="6dp" android:background="@drawable/bg_stat_card">
+                            <TextView android:id="@+id/tv_logged_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="24sp" android:textStyle="bold" android:textColor="#1C1C1E"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Logged" android:textSize="11sp" android:textColor="#8E8E93"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Days" android:textSize="11sp" android:textColor="#8E8E93"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+                            android:padding="12dp" android:background="@drawable/bg_stat_card">
+                            <TextView android:id="@+id/tv_missed_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="24sp" android:textStyle="bold" android:textColor="#D95F6A"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Missed" android:textSize="11sp" android:textColor="#8E8E93"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="days" android:textSize="11sp" android:textColor="#8E8E93"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ⑦ THIS MONTH'S SPOTLIGHT -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp" app:cardElevation="0dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="This month's spotlight" android:textSize="15sp" android:textStyle="bold" android:textColor="#1C1C1E"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Across all your subjects" android:textSize="12sp" android:textColor="#8E8E93"
+                        android:layout_marginBottom="14dp"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <LinearLayout android:id="@+id/card_most_improved"
+                            android:layout_width="0dp" android:layout_height="120dp" android:layout_weight="1"
+                            android:layout_marginEnd="8dp" android:orientation="vertical" android:gravity="center"
+                            android:padding="12dp" android:background="@drawable/bg_spotlight_green">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🚀" android:textSize="22sp"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Most improved" android:textSize="11sp" android:textColor="#2E7D52" android:gravity="center" android:layout_marginTop="4dp"/>
+                            <TextView android:id="@+id/tv_most_improved" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textSize="13sp" android:textStyle="bold" android:textColor="#1C1C1E" android:gravity="center"/>
+                            <TextView android:id="@+id/tv_most_improved_delta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textSize="11sp" android:textColor="#2E7D52" android:gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout android:id="@+id/card_needs_attention"
+                            android:layout_width="0dp" android:layout_height="120dp" android:layout_weight="1"
+                            android:orientation="vertical" android:gravity="center"
+                            android:padding="12dp" android:background="@drawable/bg_spotlight_red">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⚠️" android:textSize="22sp"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Needs attention" android:textSize="11sp" android:textColor="#B03030" android:gravity="center" android:layout_marginTop="4dp"/>
+                            <TextView android:id="@+id/tv_needs_attention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textSize="13sp" android:textStyle="bold" android:textColor="#1C1C1E" android:gravity="center"/>
+                            <TextView android:id="@+id/tv_needs_attention_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textSize="11sp" android:textColor="#B03030" android:gravity="center"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ⑧ SMART INSIGHT -->
+            <!-- ⑧ SMART INSIGHT — now powered by Gemini -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#5B8DCC">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Header row with loading indicator -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/tv_smart_insight_title"
+                            android:text="💡 SMART INSIGHT · THIS MONTH"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:letterSpacing="0.05"/>
+
+                        <!-- Loading spinner — visible while Gemini is thinking -->
+                        <ProgressBar
+                            android:id="@+id/pbGeminiLoading"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:indeterminateTint="#FFFFFF"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                    <!-- Powered by Gemini label -->
+                    <TextView
+                        android:id="@+id/tvGeminiLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="✨ Powered by Gemini AI"
+                        android:textSize="10sp"
+                        android:textColor="#C8DAFF"
+                        android:layout_marginBottom="8dp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tv_smart_insight_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Keep logging to unlock your personalized insights!"
+                        android:textSize="13sp"
+                        android:textColor="#E8F0FA"
+                        android:lineSpacingMultiplier="1.4"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

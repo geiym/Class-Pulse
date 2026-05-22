@@ -1,0 +1,790 @@
+[
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_date_chip.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_date_chip.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_great.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_great.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_splash_circle.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_splash_circle.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_log_present.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_log_present.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_day_badge_low.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_day_badge_low.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_header_home.png.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_header_home.png"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_analysis.png.flat",
+        "source": "com.classpulse.app-main-49:/drawable/analysis.png"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_back_btn_circle.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_back_btn_circle.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_nav_trends.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_nav_trends.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_late.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_late.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_date_badge.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_date_badge.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_absent.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_absent.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_day_badge_happy.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_day_badge_happy.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_toggle_container.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_toggle_container.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_note_box.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_note_box.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_heatmap_high.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_heatmap_high.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_dot_yellow.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/dot_yellow.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_splash_background.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/splash_background.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_checkin_badge_pink.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_checkin_badge_pink.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/color_nav_icon_color.xml.flat",
+        "source": "com.classpulse.app-main-49:/color/nav_icon_color.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_item_spinner_subject.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/item_spinner_subject.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_fragment_profile.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_page_getstarted.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/page_getstarted.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.classpulse.app-main-49:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_fab.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_fab.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_card.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_card.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_input.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_input.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_activity_main.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_nav_home.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_nav_home.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_insight_card.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_insight_card.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_btn_unselected.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_btn_unselected.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_subject_empty.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_subject_empty.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_btn_delete_icon.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_btn_delete_icon.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_avatar_left_rounded.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_avatar_left_rounded.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_spotlight_green.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_spotlight_green.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_activity_logo_splash.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/activity_logo_splash.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_checkin_badge_blue.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_checkin_badge_blue.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_splash_ring.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_splash_ring.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_day_badge_absent.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_day_badge_absent.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_edit_field.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_edit_field.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_icon_tap_ripple.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_icon_tap_ripple.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_day_badge_late.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_day_badge_late.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_default_avatar.jpg.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_default_avatar.jpg"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_mood_unselected.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_mood_unselected.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_dot_blue_soft.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/dot_blue_soft.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_checkin_badge_yellow.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_checkin_badge_yellow.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_chip_unselected.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_chip_unselected.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_mood.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_mood.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_chip_sky.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_chip_sky.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_day_badge_medium.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_day_badge_medium.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_legend_late.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/legend_late.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_attendance_unselected.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_attendance_unselected.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_search_bar.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_search_bar.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_attendance_late.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_attendance_late.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_fragment_logs.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/fragment_logs.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_fragment_trends.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/fragment_trends.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_circle_clip.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_circle_clip.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_day_badge_high.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_day_badge_high.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_dialog_color_picker.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/dialog_color_picker.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_home.png.flat",
+        "source": "com.classpulse.app-main-49:/drawable/home.png"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_chevron_right.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_chevron_right.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_log_neutral.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_log_neutral.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_check.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_check.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_heatmap_medium.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_heatmap_medium.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_slump_none.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_slump_none.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_progress_bar_green.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/progress_bar_green.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_nav_subjects.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_nav_subjects.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_log_absent.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_log_absent.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_bento_purple.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_bento_purple.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_fragment_settings.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_dot_red.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/dot_red.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_log_now.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_log_now.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_item_subject.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/item_subject.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_date_box_green.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_date_box_green.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_id_label.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_id_label.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_activity_add_edit_subject.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/activity_add_edit_subject.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_subject.png.flat",
+        "source": "com.classpulse.app-main-49:/drawable/subject.png"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_checkin_badge_green.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_checkin_badge_green.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_color_swatch.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_color_swatch.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_upcoming.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_upcoming.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_btn_secondary.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_btn_secondary.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_btn_primary.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_btn_primary.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_bento_yellow.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_bento_yellow.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_progress_bar_orange.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/progress_bar_orange.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_progress_bar_red.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/progress_bar_red.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_chip_selected.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_chip_selected.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_item_color_swatch.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/item_color_swatch.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_splash.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_splash.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_try_more.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_try_more.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_activity_report_room.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/activity_report_room.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_date_box_orange.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_date_box_orange.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_btn_selected.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_btn_selected.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_nav_profile.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_nav_profile.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_activity_log_reflection.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/activity_log_reflection.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_fire_badge.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_fire_badge.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_page_splash.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/page_splash.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_layout_tab_monthly.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/layout_tab_monthly.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_present.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_present.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_check_in.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_check_in.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_day_badge_mood.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_day_badge_mood.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_medium.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_medium.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_spotlight_red.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_spotlight_red.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_tab_container.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_tab_container.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_header.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_header.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_bento_green.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_bento_green.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_item_log_section_header.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/item_log_section_header.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_checkin_icon_box.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_checkin_icon_box.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_chip_blue.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_chip_blue.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_heatmap_none.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_heatmap_none.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_heatmap_low.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_heatmap_low.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_layout_tab_daily.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/layout_tab_daily.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_tab_selected.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_tab_selected.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_user.png.flat",
+        "source": "com.classpulse.app-main-49:/drawable/user.png"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_progress_bar_blue.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/progress_bar_blue.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_fragment_subjects.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/fragment_subjects.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_participation_high.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_participation_high.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_time_picker_box.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_time_picker_box.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_item_spinner_dropdown.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/item_spinner_dropdown.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_day_badge_present.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_day_badge_present.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_stat_card.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_stat_card.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_fragment_dashboard.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_avatar_bracket.png.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_avatar_bracket.png"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_quick_action.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_quick_action.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_log_first_class_btn.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_log_first_class_btn.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_log_late.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_log_late.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_item_checkin_row.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/item_checkin_row.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_subject_default.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_subject_default.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_participation_low.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_participation_low.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_icon_selected.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_icon_selected.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_on_track.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_on_track.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_avatar_frame.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_avatar_frame.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_attendance_absent.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_attendance_absent.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_nav_bubble.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_nav_bubble.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_participation_medium.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_participation_medium.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_barcode.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_barcode.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_logged.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_logged.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_bento_blue.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_bento_blue.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_tab_unselected.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_tab_unselected.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_delete.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_delete.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_legend_present.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/legend_present.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_legend_absent.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/legend_absent.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_item_time_entry.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/item_time_entry.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_check_white.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_check_white.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_bento_pink.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_bento_pink.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_date_box_red.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_date_box_red.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_layout_tab_weekly.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/layout_tab_weekly.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_dot_purple_soft.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/dot_purple_soft.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_low.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_low.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_item_log.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/item_log.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_dot_indicator_blue.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_dot_indicator_blue.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_amber_badge.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_amber_badge.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_fragment_home.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_settings.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_edit.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_edit.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_dot_indicator.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_dot_indicator.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_item_schedule.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/item_schedule.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_stat_pill.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_stat_pill.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_activity_class_setup.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/activity_class_setup.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_page_onboard.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/page_onboard.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_dot_green.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/dot_green.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_progress_bar_gray.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/progress_bar_gray.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_strip_rounded.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_strip_rounded.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_activity_splash.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_btn_get_started.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_btn_get_started.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_nav_float.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_nav_float.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_view_color_strip.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/view_color_strip.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_nav_logs.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_nav_logs.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.classpulse.app-main-49:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_badge_high.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_badge_high.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_logs.png.flat",
+        "source": "com.classpulse.app-main-49:/drawable/logs.png"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_chip_green.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_chip_green.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_bottom_sheet.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_attendance_present.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_attendance_present.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_chevron_left.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_chevron_left.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_ic_refresh.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/ic_refresh.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/color_bottom_nav_color.xml.flat",
+        "source": "com.classpulse.app-main-49:/color/bottom_nav_color.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/layout_card_class_checkin.xml.flat",
+        "source": "com.classpulse.app-main-49:/layout/card_class_checkin.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_color_dot.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_color_dot.xml"
+    },
+    {
+        "merged": "com.classpulse.app-debug-47:/drawable_bg_mood_selected.xml.flat",
+        "source": "com.classpulse.app-main-49:/drawable/bg_mood_selected.xml"
+    }
+]

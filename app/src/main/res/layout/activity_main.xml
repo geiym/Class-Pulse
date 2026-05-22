@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="108dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_nav_container"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_nav_float"
+        android:elevation="8dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <!-- Home -->
+        <FrameLayout
+            android:id="@+id/nav_item_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/nav_item_2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <FrameLayout
+                android:id="@+id/nav_bubble_1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_nav_bubble"
+                android:visibility="invisible">
+                <ImageView
+                    android:id="@+id/nav_icon_1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_nav_home"
+                    app:tint="@color/white"/>
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/nav_icon_1_flat"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_nav_home"
+                android:visibility="visible"
+                app:tint="@color/nav_icon_inactive"/>
+
+        </FrameLayout>
+
+        <!-- Subjects -->
+        <FrameLayout
+            android:id="@+id/nav_item_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            app:layout_constraintStart_toEndOf="@id/nav_item_1"
+            app:layout_constraintEnd_toStartOf="@id/nav_item_3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <FrameLayout
+                android:id="@+id/nav_bubble_2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_nav_bubble"
+                android:visibility="invisible">
+                <ImageView
+                    android:id="@+id/nav_icon_2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_nav_subjects"
+                    app:tint="@color/white"/>
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/nav_icon_2_flat"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_nav_subjects"
+                android:visibility="visible"
+                app:tint="@color/nav_icon_inactive"/>
+
+        </FrameLayout>
+
+        <!-- Trends -->
+        <FrameLayout
+            android:id="@+id/nav_item_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            app:layout_constraintStart_toEndOf="@id/nav_item_2"
+            app:layout_constraintEnd_toStartOf="@id/nav_item_4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <FrameLayout
+                android:id="@+id/nav_bubble_3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_nav_bubble"
+                android:visibility="invisible">
+                <ImageView
+                    android:id="@+id/nav_icon_3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_nav_trends"
+                    app:tint="@color/white"/>
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/nav_icon_3_flat"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_nav_trends"
+                android:visibility="visible"
+                app:tint="@color/nav_icon_inactive"/>
+
+        </FrameLayout>
+
+        <!-- Logs -->
+        <FrameLayout
+            android:id="@+id/nav_item_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            app:layout_constraintStart_toEndOf="@id/nav_item_3"
+            app:layout_constraintEnd_toStartOf="@id/nav_item_5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <FrameLayout
+                android:id="@+id/nav_bubble_4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_nav_bubble"
+                android:visibility="invisible">
+                <ImageView
+                    android:id="@+id/nav_icon_4"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_nav_logs"
+                    app:tint="@color/white"/>
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/nav_icon_4_flat"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_nav_logs"
+                android:visibility="visible"
+                app:tint="@color/nav_icon_inactive"/>
+
+        </FrameLayout>
+
+        <!-- Profile -->
+        <FrameLayout
+            android:id="@+id/nav_item_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            app:layout_constraintStart_toEndOf="@id/nav_item_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <FrameLayout
+                android:id="@+id/nav_bubble_5"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_nav_bubble"
+                android:visibility="invisible">
+                <ImageView
+                    android:id="@+id/nav_icon_5"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_nav_profile"
+                    app:tint="@color/white"/>
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/nav_icon_5_flat"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_nav_profile"
+                android:visibility="visible"
+                app:tint="@color/nav_icon_inactive"/>
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

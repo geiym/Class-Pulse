@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="#5A8BD0"/>
+    </item>
+    <!-- Optional decorative circles like image 2 -->
+    <item android:gravity="top|end">
+        <shape android:shape="oval">
+            <solid android:color="#6B9AD4"/>
+            <size android:width="200dp" android:height="200dp"/>
+        </shape>
+    </item>
+    <item android:gravity="center">
+        <bitmap
+            android:src="@mipmap/ic_launcher_foreground"
+            android:gravity="center"/>
+    </item>
+</layer-list>

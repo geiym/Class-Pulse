@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ClassPulse" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/cobalt</item>
+        <item name="colorPrimaryVariant">@color/cobalt_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/fresh_sky</item>
+        <item name="colorSecondaryVariant">@color/fresh_sky_light</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/platinum</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="android:statusBarColor">@color/cobalt</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="CardStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+
+    <style name="ButtonPrimary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/cobalt</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="ButtonOutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/cobalt</item>
+        <item name="android:textColor">@color/cobalt</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SectionHeader">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <style name="StatValue">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/cobalt</item>
+        <item name="android:fontFamily">sans-serif-bold</item>
+    </style>
+
+    <style name="TabStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabBackground">@color/white</item>
+        <item name="tabTextColor">@color/text_secondary</item>
+        <item name="tabSelectedTextColor">@color/cobalt</item>
+        <item name="tabIndicatorColor">@color/cobalt</item>
+        <item name="tabTextAppearance">@style/TabTextAppearance</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="NavTextStyle">
+        <item name="android:textSize">9sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Fixed: no bg_splash drawable needed -->
+    <style name="Theme.Splash" parent="Theme.ClassPulse">
+        <item name="android:windowBackground">#5A8BD0</item>
+        <item name="android:statusBarColor">#5A8BD0</item>
+        <item name="android:navigationBarColor">#5A8BD0</item>
+        <item name="android:windowDisablePreview">false</item>
+    </style>
+</resources>

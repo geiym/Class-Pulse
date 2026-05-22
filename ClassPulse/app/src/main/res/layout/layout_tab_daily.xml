@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Calendar Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Month navigation row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/btnCalPrev"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_chevron_left"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Previous month"/>
+
+                <TextView
+                    android:id="@+id/tvCalMonth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="April 2026"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#1C1C1E"/>
+
+                <ImageButton
+                    android:id="@+id/btnCalNext"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_chevron_right"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Next month"/>
+            </LinearLayout>
+
+            <!-- Day headers: S M T W TH F S -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:gravity="center"
+                    android:text="S" android:textSize="11sp" android:textColor="#8E8E93"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:gravity="center"
+                    android:text="M" android:textSize="11sp" android:textColor="#8E8E93"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:gravity="center"
+                    android:text="T" android:textSize="11sp" android:textColor="#8E8E93"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:gravity="center"
+                    android:text="W" android:textSize="11sp" android:textColor="#8E8E93"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:gravity="center"
+                    android:text="TH" android:textSize="11sp" android:textColor="#8E8E93"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:gravity="center"
+                    android:text="F" android:textSize="11sp" android:textColor="#8E8E93"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:gravity="center"
+                    android:text="S" android:textSize="11sp" android:textColor="#8E8E93"/>
+            </LinearLayout>
+
+            <!-- Calendar grid (populated programmatically) -->
+            <android.widget.GridLayout
+                android:id="@+id/gridCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="7"/>
+
+            <!-- Legend -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dp">
+
+                <!-- Present -->
+                <View
+                    android:layout_width="28dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/legend_present"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Present"
+                    android:textSize="11sp"
+                    android:textColor="#555555"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="16dp"/>
+
+                <!-- Late -->
+                <View
+                    android:layout_width="28dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/legend_late"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Late"
+                    android:textSize="11sp"
+                    android:textColor="#555555"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="16dp"/>
+
+                <!-- Absent -->
+                <View
+                    android:layout_width="28dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/legend_absent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Absent"
+                    android:textSize="11sp"
+                    android:textColor="#555555"
+                    android:layout_marginStart="6dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Selected Day Detail Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDayDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#FFFFFF"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Date title -->
+            <TextView
+                android:id="@+id/tvDayDetailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅 APRIL 23, 2026 — TAP ANY DATE ABOVE"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#8E8E93"
+                android:letterSpacing="0.04"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Attendance row -->
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Attendance"
+                    android:textSize="15sp" android:textColor="#1C1C1E"
+                    android:fontFamily="sans-serif-medium"/>
+                <TextView android:id="@+id/tvDayAttendance"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🕐 Late"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#1C1C1E"
+                    android:background="@drawable/bg_day_badge_late"
+                    android:paddingHorizontal="18dp"
+                    android:paddingVertical="8dp"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#F0F0F0"/>
+
+            <!-- Participation row -->
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Participation"
+                    android:textSize="15sp" android:textColor="#1C1C1E"
+                    android:fontFamily="sans-serif-medium"/>
+                <TextView android:id="@+id/tvDayParticipation"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="👋 Low"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#1C1C1E"
+                    android:background="@drawable/bg_day_badge_low"
+                    android:paddingHorizontal="18dp"
+                    android:paddingVertical="8dp"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#F0F0F0"/>
+
+            <!-- Mood row -->
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Mood"
+                    android:textSize="15sp" android:textColor="#1C1C1E"
+                    android:fontFamily="sans-serif-medium"/>
+                <TextView android:id="@+id/tvDayMood"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="😰 Stressed"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#1C1C1E"
+                    android:background="@drawable/bg_day_badge_mood"
+                    android:paddingHorizontal="18dp"
+                    android:paddingVertical="8dp"/>
+            </LinearLayout>
+
+            <!-- Notes box -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_note_box"
+                android:padding="14dp"
+                android:layout_marginTop="12dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="📝 YOUR NOTE"
+                    android:textSize="11sp" android:textStyle="bold"
+                    android:textColor="#8E8E93" android:letterSpacing="0.05"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView android:id="@+id/tvDayNote"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="No notes for this session."
+                    android:textSize="14sp" android:textColor="#1C1C1E"
+                    android:lineSpacingMultiplier="1.4"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

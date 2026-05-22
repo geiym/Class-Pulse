@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutReportRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#F0F7F0">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="36dp"
+                android:paddingBottom="32dp">
+
+                <!-- Header: "The Report Room" + back button -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="The "
+                            android:textSize="26sp"
+                            android:textStyle="bold"
+                            android:textColor="#1C1C1E"
+                            android:fontFamily="sans-serif-medium"/>
+
+                        <TextView
+                            android:id="@+id/tvReportTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Report"
+                            android:textSize="26sp"
+                            android:textStyle="bold"
+                            android:textColor="#5B8DCC"
+                            android:fontFamily="sans-serif-medium"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Room"
+                            android:textSize="26sp"
+                            android:textStyle="bold"
+                            android:textColor="#1C1C1E"
+                            android:fontFamily="sans-serif-medium"/>
+                    </LinearLayout>
+
+                    <!-- Back button (same style as Add Subject) -->
+                    <ImageButton
+                        android:id="@+id/btnBack"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_chevron_right"
+                        android:background="@drawable/bg_back_btn_circle"
+                        android:contentDescription="Go back"
+                        android:padding="8dp"/>
+                </LinearLayout>
+
+                <!-- Color strip -->
+                <include layout="@layout/view_color_strip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Subject Info Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardSubjectInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#A8D8A8">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- Top row: icon + info + edit button -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/ivReportIcon"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:src="@drawable/ic_subject_default"
+                                android:scaleType="centerCrop"
+                                android:background="@drawable/bg_icon_tap_ripple"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_marginStart="12dp">
+
+                                <TextView
+                                    android:id="@+id/tvReportSubjectName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="IPT"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#1C1C1E"
+                                    android:fontFamily="sans-serif-medium"/>
+
+                                <TextView
+                                    android:id="@+id/tvReportSchedule"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mon / Tue / Wed"
+                                    android:textSize="12sp"
+                                    android:textColor="#3A3A4A"
+                                    android:layout_marginTop="2dp"/>
+
+                                <TextView
+                                    android:id="@+id/tvReportInstructor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sir Ramos · ROB101"
+                                    android:textSize="12sp"
+                                    android:textColor="#3A3A4A"
+                                    android:layout_marginTop="1dp"/>
+                            </LinearLayout>
+
+                            <!-- Edit Subject button -->
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/btnEditSubject"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:cardCornerRadius="20dp"
+                                app:cardElevation="0dp"
+                                app:cardBackgroundColor="#FFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="center_vertical"
+                                    android:paddingHorizontal="12dp"
+                                    android:paddingVertical="6dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="✏ "
+                                        android:textSize="12sp"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Edit Subject"
+                                        android:textSize="12sp"
+                                        android:textColor="#1C1C1E"
+                                        android:fontFamily="sans-serif-medium"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                        <!-- Stats row -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="14dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:background="@drawable/bg_stat_pill"
+                                android:padding="10dp"
+                                android:layout_marginEnd="6dp">
+
+                                <TextView
+                                    android:id="@+id/tvReportAttendance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="88%"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#1C1C1E"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Attendance"
+                                    android:textSize="10sp"
+                                    android:textColor="#555555"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:background="@drawable/bg_stat_pill"
+                                android:padding="10dp"
+                                android:layout_marginEnd="6dp">
+
+                                <TextView
+                                    android:id="@+id/tvReportAvgPart"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Low"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#1C1C1E"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Avg Part."
+                                    android:textSize="10sp"
+                                    android:textColor="#555555"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:background="@drawable/bg_stat_pill"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:id="@+id/tvReportSessions"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="18"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#1C1C1E"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sessions"
+                                    android:textSize="10sp"
+                                    android:textColor="#555555"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- "Your X Analysis" title -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your "
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#1C1C1E"/>
+
+                    <TextView
+                        android:id="@+id/tvAnalysisSubject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subject"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#5B8DCC"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Analysis"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#1C1C1E"/>
+
+                    <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+
+                    <include layout="@layout/view_color_strip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <!-- Tabs -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/tabDaily"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Daily"
+                        android:textSize="13sp"
+                        android:textColor="#5B8DCC"
+                        android:fontFamily="sans-serif-medium"/>
+
+                    <TextView
+                        android:id="@+id/tabWeekly"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Weekly"
+                        android:textSize="13sp"
+                        android:textColor="#8E8E93"
+                        android:fontFamily="sans-serif-medium"/>
+
+                    <TextView
+                        android:id="@+id/tabMonthly"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Monthly"
+                        android:textSize="13sp"
+                        android:textColor="#8E8E93"
+                        android:fontFamily="sans-serif-medium"/>
+                </LinearLayout>
+
+                <!-- Tab content container -->
+                <FrameLayout
+                    android:id="@+id/frameTabContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"/>
+
+                <!-- Smart Insight Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#5B8DCC">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tvInsightTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="💡 SMART INSIGHT · THIS WEEK"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:letterSpacing="0.05"/>
+
+                        <TextView
+                            android:id="@+id/tvInsightBody"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Keep logging to unlock your personalized insights!"
+                            android:textSize="13sp"
+                            android:textColor="#E8F0FA"
+                            android:layout_marginTop="6dp"
+                            android:lineSpacingMultiplier="1.3"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

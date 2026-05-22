@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <!-- Icon -->
+    <TextView
+        android:id="@+id/tvCheckinIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="📅"
+        android:textSize="18sp"/>
+
+    <!-- Text -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:id="@+id/tvCheckinTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Showing Up"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#1C1C1E"/>
+
+        <TextView
+            android:id="@+id/tvCheckinDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You came to 4 out of 5 classes this week! 🎉"
+            android:textSize="11sp"
+            android:textColor="#8E8E93"
+            android:lineSpacingMultiplier="1.2"/>
+    </LinearLayout>
+
+    <!-- Status badge -->
+    <TextView
+        android:id="@+id/tvCheckinBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Great"
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_badge_great"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="3dp"/>
+
+</LinearLayout>

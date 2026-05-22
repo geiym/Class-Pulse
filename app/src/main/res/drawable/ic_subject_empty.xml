@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Book cover -->
+    <path
+        android:fillColor="#8E8E93"
+        android:pathData="M4,2C3.45,2 3,2.45 3,3V19C3,19.55 3.45,20 4,20H20C20.55,20 21,19.55 21,19V7L15,2H4Z"/>
+
+    <!-- Page fold -->
+    <path
+        android:fillColor="#F2F2F7"
+        android:pathData="M15,2V7H21L15,2Z"/>
+
+    <!-- Lines suggesting text -->
+    <path
+        android:fillColor="#F2F2F7"
+        android:pathData="M7,9H17V10.5H7Z"/>
+    <path
+        android:fillColor="#F2F2F7"
+        android:pathData="M7,12H17V13.5H7Z"/>
+    <path
+        android:fillColor="#F2F2F7"
+        android:pathData="M7,15H13V16.5H7Z"/>
+
+    <!-- Bottom spine line -->
+    <path
+        android:fillColor="#AEAEB2"
+        android:pathData="M3,20H21V22H3Z"/>
+</vector>

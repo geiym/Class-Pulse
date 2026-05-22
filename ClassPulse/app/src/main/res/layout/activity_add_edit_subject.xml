@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F7"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="100dp">
+
+        <!-- Title Row with back button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvHeaderPrefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add a "
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#1C1C1E"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:id="@+id/tvHeaderSuffix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subject"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#5B8DCC"
+                    android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+
+            <!-- Back / Close button on the right -->
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_chevron_right"
+                android:background="@drawable/bg_back_btn_circle"
+                android:contentDescription="Go back"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <!-- Color strip -->
+        <include layout="@layout/view_color_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"/>
+
+        <!-- Change Color row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|end"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Color"
+                android:textSize="12sp"
+                android:textColor="#8E8E93"
+                android:layout_marginEnd="8dp"/>
+
+            <View
+                android:id="@+id/viewColorDot"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/bg_color_dot"
+                android:backgroundTint="#5B8DCC"/>
+        </LinearLayout>
+
+        <!-- Subject Preview Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:id="@+id/layoutSubjectPreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:background="#A8C8E8">
+
+                <!-- Tappable icon with label -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivSubjectIcon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_subject_default"
+                        android:contentDescription="Subject icon"
+                        android:scaleType="centerInside"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="@drawable/bg_icon_tap_ripple"
+                        android:padding="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tap to Change Icon"
+                        android:textSize="9sp"
+                        android:textColor="#4A4A6A"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="14dp">
+
+                    <EditText
+                        android:id="@+id/etSubjectName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Subject Name"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#1C1C2E"
+                        android:textColorHint="#7A7A9A"
+                        android:background="@null"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:imeOptions="actionNext"
+                        android:autofillHints="name"
+                        android:fontFamily="sans-serif-medium"/>
+
+                    <EditText
+                        android:id="@+id/etClassCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Class Code"
+                        android:textSize="13sp"
+                        android:textColor="#4A4A6A"
+                        android:textColorHint="#7A7A9A"
+                        android:background="@null"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:imeOptions="actionNext"
+                        android:autofillHints="no"/>
+
+                    <EditText
+                        android:id="@+id/etInstructor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Instructor"
+                        android:textSize="13sp"
+                        android:textColor="#4A4A6A"
+                        android:textColorHint="#7A7A9A"
+                        android:background="@null"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:imeOptions="actionDone"
+                        android:autofillHints="name"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Class Days Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class Days"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#1C1C1E"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Row 1: Monday, Tuesday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cbMonday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Monday"
+                        android:textColor="#1C1C1E"
+                        android:textSize="14sp"
+                        android:buttonTint="#5B8DCC"/>
+
+                    <CheckBox
+                        android:id="@+id/cbTuesday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tuesday"
+                        android:textColor="#1C1C1E"
+                        android:textSize="14sp"
+                        android:buttonTint="#5B8DCC"/>
+                </LinearLayout>
+
+                <!-- Row 2: Wednesday, Thursday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp">
+
+                    <CheckBox
+                        android:id="@+id/cbWednesday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Wednesday"
+                        android:textColor="#1C1C1E"
+                        android:textSize="14sp"
+                        android:buttonTint="#5B8DCC"/>
+
+                    <CheckBox
+                        android:id="@+id/cbThursday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Thursday"
+                        android:textColor="#1C1C1E"
+                        android:textSize="14sp"
+                        android:buttonTint="#5B8DCC"/>
+                </LinearLayout>
+
+                <!-- Row 3: Friday, Saturday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp">
+
+                    <CheckBox
+                        android:id="@+id/cbFriday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Friday"
+                        android:textColor="#1C1C1E"
+                        android:textSize="14sp"
+                        android:buttonTint="#5B8DCC"/>
+
+                    <CheckBox
+                        android:id="@+id/cbSaturday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Saturday"
+                        android:textColor="#1C1C1E"
+                        android:textSize="14sp"
+                        android:buttonTint="#5B8DCC"/>
+                </LinearLayout>
+
+                <!-- Row 4: Sunday (alone, half width) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp">
+
+                    <CheckBox
+                        android:id="@+id/cbSunday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sunday"
+                        android:textColor="#1C1C1E"
+                        android:textSize="14sp"
+                        android:buttonTint="#5B8DCC"/>
+
+                    <!-- Empty spacer to keep Sunday left-aligned -->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Class Time Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Class Time header row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Class Time"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#1C1C1E"/>
+
+                    <CheckBox
+                        android:id="@+id/cbApplySameTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apply same time to all selected days"
+                        android:textSize="11sp"
+                        android:textColor="#8E8E93"
+                        android:buttonTint="#5B8DCC"/>
+                </LinearLayout>
+
+                <!-- Time entries container (populated dynamically) -->
+                <LinearLayout
+                    android:id="@+id/layoutTimeEntries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveSubject"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="Save Subject"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#6B93D6"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-medium"
+                app:cornerRadius="26dp"
+                app:elevation="4dp"
+                style="@style/Widget.MaterialComponents.Button"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#9BA5B4"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                app:cornerRadius="26dp"
+                app:elevation="4dp"
+                style="@style/Widget.MaterialComponents.Button"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

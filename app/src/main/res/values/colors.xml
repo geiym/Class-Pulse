@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ClassPulse Brand Colors -->
+    <color name="cobalt">#1A237E</color>
+    <color name="cobalt_dark">#0D1757</color>
+    <color name="cobalt_medium">#283593</color>
+    <color name="fresh_sky">#03A9F4</color>
+    <color name="fresh_sky_light">#29B6F6</color>
+    <color name="platinum">#F5F7FA</color>
+    <color name="platinum_dark">#E8EBF0</color>
+    <color name="amber">#FFB300</color>
+    <color name="amber_light">#FFCA28</color>
+    <color name="status_bar">#598acf</color>
+
+    <!-- Engagement Level Colors -->
+    <color name="high_green">#4CAF50</color>
+    <color name="medium_yellow">#FFB300</color>
+    <color name="low_red">#F44336</color>
+
+    <!-- Mood Colors -->
+    <color name="focused_color">#03A9F4</color>
+    <color name="neutral_color">#78909C</color>
+    <color name="tired_color">#FF7043</color>
+    <color name="stressed_color">#AB47BC</color>
+
+    <!-- Status Colors -->
+    <color name="present_color">#4CAF50</color>
+    <color name="late_color">#FFB300</color>
+    <color name="absent_color">#F44336</color>
+
+    <!-- UI Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="text_primary">#1A237E</color>
+    <color name="text_secondary">#546E7A</color>
+    <color name="text_light">#90A4AE</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="surface">#F5F7FA</color>
+
+    <!-- Chart Colors -->
+    <color name="chart_blue">#1A237E</color>
+    <color name="chart_sky">#03A9F4</color>
+    <color name="chart_amber">#FFB300</color>
+    <color name="chart_green">#4CAF50</color>
+    <color name="chart_red">#F44336</color>
+
+    <!-- Heatmap Colors -->
+    <color name="heatmap_high">#1A237E</color>
+    <color name="heatmap_medium">#03A9F4</color>
+    <color name="heatmap_low">#B0BEC5</color>
+    <color name="heatmap_none">#ECEFF1</color>
+
+    <!-- Navbar Colors -->
+    <color name="nav_icon_inactive">#BBBBBB</color>
+    <color name="nav_icon_active">#5B8DEF</color>
+    <color name="nav_fab_bg">#5B8DEF</color>
+    <color name="nav_fab_icon">#FFFFFF</color>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="52dp"
+    android:height="52dp"
+    android:viewportWidth="52"
+    android:viewportHeight="52">
+
+    <!-- Circular background -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.25"
+        android:pathData="M26,2A24,24 0,1 1,2 26,24,24 0,0 1,26 2Z"/>
+
+    <!-- Book body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M16,13C15.45,13 15,13.45 15,14V38C15,38.55 15.45,39 16,39H36C36.55,39 37,38.55 37,38V20L30,13H16Z"/>
+
+    <!-- Page fold triangle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.4"
+        android:pathData="M30,13V20H37L30,13Z"/>
+
+    <!-- Text lines -->
+    <path
+        android:fillColor="#5B8DCC"
+        android:pathData="M19,24H33V25.5H19Z"/>
+    <path
+        android:fillColor="#5B8DCC"
+        android:pathData="M19,27.5H33V29H19Z"/>
+    <path
+        android:fillColor="#5B8DCC"
+        android:pathData="M19,31H27V32.5H19Z"/>
+
+</vector>
